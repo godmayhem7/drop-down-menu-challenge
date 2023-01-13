@@ -1,0 +1,441 @@
+*{
+    font-family: "Epilouge";
+}
+
+@font-face {
+    font-family: "Epilouge";
+    src: url(Epilogue/static/Epilogue-Medium.ttf);
+}
+
+@font-face {
+    font-family: "Epilouge bold";
+    src: url(Epilogue/static/Epilogue-Bold.ttf);
+}
+
+body{
+    background: hsl(0, 0%, 98%);
+    margin: 20px 0 0 0;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    width: 80%;
+    height: 90px;
+    padding: 0 10%;
+}
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 45%;
+}
+
+.hdr-article{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.arrowdown-toggle{
+    transform: rotate(180deg);
+}
+
+.Dropdown-menu1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.Dropdown-menu2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+}
+
+.drop1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: absolute;
+    background: hsl(0, 0%, 100%);
+    height: 150px;
+    top: 30px;
+    padding: 20px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    display: none;
+    box-shadow: 0 0 30px 3px hsla(0, 0%, 41%, 0.421);
+}
+
+.drop1-toggle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: absolute;
+    background: hsl(0, 0%, 100%);
+    height: 150px;
+    top: 30px;
+    padding: 20px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 30px 3px hsla(0, 0%, 41%, 0.421);
+}
+
+.drop2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: absolute;
+    background: hsl(0, 0%, 100%);
+    height: 120px;
+    top: 30px;
+    padding: 20px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 30px 3px hsla(0, 0%, 41%, 0.421);
+    display: none;
+}
+
+.drop2-toggle{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    position: absolute;
+    background: hsl(0, 0%, 100%);
+    height: 120px;
+    top: 30px;
+    padding: 20px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 30px 3px hsla(0, 0%, 41%, 0.421);
+}
+
+.hdr-btn-holder{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.register{
+    padding: 15px 25px;
+    font-weight: 500;
+    font-size: 18px;
+    border: 2px solid hsl(0, 0%, 41%);
+    background-color: transparent;
+    border-radius:15px;
+    color: hsl(0, 0%, 41%);
+    transition: 200ms;
+}
+
+.register:hover{
+    background-color: transparent;
+    border: 2px solid hsl(0, 0%, 8%);
+    cursor: pointer;
+    transition: 200ms;
+    color: hsl(0, 0%, 8%);
+}
+
+.login{
+    border: none;
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 200ms;
+    color: hsl(0, 0%, 41%);
+}
+
+.login:hover{
+    transition: 200ms;
+    cursor: pointer;
+    color: hsl(0, 0%, 8%);
+}
+
+a{
+    color:hsl(0, 0%, 41%);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+a:hover{
+    cursor: pointer;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.desktop{
+    width: 40%;
+}
+
+.main-article{
+    width: 40%;
+    margin-right: 50px;
+}
+
+h1{
+    font-size: 80px;
+}
+
+.ma-p{
+    width: 80%;
+    font-size: 18px;
+    font-weight: 500;
+    color: hsl(0, 0%, 41%);
+    line-height: 30px;
+}
+
+
+.learnmore{
+    margin: 0;
+    padding: 15px 30px;
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 8%);
+    font-size: 18px;
+    font-weight: 700;
+    border-radius: 15px;
+    border: 2px solid hsl(0, 0%, 8%);
+    margin: 30px 0;
+    transition: 200ms;
+}
+
+.learnmore:hover{
+    color: hsl(0, 0%, 8%);
+    cursor: pointer;
+    transition: 200ms;
+    background-color: transparent;
+}
+
+.workwith-companies{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.hamburger{
+    display: none;
+}
+
+.close{
+    display: none;
+}
+
+.mobile{
+    display: none;
+}
+
+@media screen and (max-width:1000px) {
+    nav{
+        display: flex;
+        flex-direction: column ;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        width: fit-content;
+    }
+
+    .hdr-btn-holder{
+        width: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        line-height: 40px;
+        height: 90px;
+        
+    }
+
+    header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items:flex-start;
+        width: 80%;
+        height: 90px;
+        padding: 0 10%;
+    }
+
+    .hdr-article{
+        width: 50%;
+        position: absolute;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 7%;
+        top: 0;
+        bottom: 0;
+        background:hsl(0, 0%, 100%);
+        right: 0;
+        display: none;
+    }
+
+    .hdr-article-sub{
+        width: 50%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding-left: 7%;
+        top: 0;
+        bottom: 0;
+        background:hsl(0, 0%, 100%);
+        right: 0;
+        line-height: 40px;
+    }
+
+    .drop1-toggle{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        position: relative;
+        background: transparent;
+        height: fit-content;
+        padding: 0 0 0 20px;
+        width: fit-content;
+        border: none;
+        border-radius: 5px;
+        box-shadow: none;
+        top: 0px;
+    }
+
+    
+    .drop2-toggle{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        position: relative;
+        background:transparent;
+        height:fit-content;
+        padding: 0 0 0 20px;
+        width: fit-content;
+        border: none;
+        border-radius: 5px;
+        box-shadow: none;
+        top: 0px;
+    }
+
+    .close-meanu-div{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        width:100%;
+    }
+
+    .close{
+        display: block;
+        margin: 10px 30px 0 0;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .Dropdown-menu1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    .Dropdown-menu2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        position: relative;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        margin-top: 40px;
+    }
+
+    .desktop{
+        width: 40%;
+        display: none;
+    }
+
+    .mobile{
+        display: flex;
+        width: 100%;
+    }
+
+    h1{
+        font-size: 50px;
+        text-align: center;
+    }
+    
+    .ma-p{
+        width: 100%;
+        font-size: 18px;
+        font-weight: 500;
+        color: hsl(0, 0%, 41%);
+        line-height: 30px;
+        text-align: center;
+    }
+
+    .main-article{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .workwith-companies{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .register{
+        padding: 15px 25px;
+        font-weight: 500;
+        font-size: 18px;
+        border: 2px solid hsl(0, 0%, 41%);
+        background-color: transparent;
+        border-radius:15px;
+        color: hsl(0, 0%, 41%);
+        transition: 200ms;
+        width: 85%;
+    }
+}
